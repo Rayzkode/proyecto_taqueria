@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('orden', function (Blueprint $table) {
             $table->id();
             $table->date('fecha');
+            $table->integer('mesa');
             $table->decimal('total', 10, 2);
             $table->unsignedBigInteger('suc_id');
             
