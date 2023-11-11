@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('orden_detalle', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('ord_id');
-            $table->unsignedBigInteger('inv_id');
+            $table->unsignedBigInteger('prod_id');
 
             $table->foreign('ord_id')->references('id')->on('orden');
-            $table->foreign('inv_id')->references('id')->on('inventario');
+            $table->foreign('prod_id')->references('id')->on('producto');
 
             $table->timestamps();
         });
