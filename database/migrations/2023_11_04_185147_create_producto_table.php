@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('producto', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->decimal('precio unitario', 10, 2);
+            $table->decimal('precio_unitario', 10, 2);
             $table->unsignedBigInteger('inv_id');
             
             $table->foreign('inv_id')->references('id')->on('inventario')->onDelete('cascade');
