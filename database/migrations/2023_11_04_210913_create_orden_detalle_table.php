@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('ord_id');
             $table->unsignedBigInteger('prod_id');
+            $table->decimal('total', 10, 2);
+            $table->decimal('descuento', 10, 2);
 
             $table->foreign('ord_id')->references('id')->on('orden');
             $table->foreign('prod_id')->references('id')->on('producto');

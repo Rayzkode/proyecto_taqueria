@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('orden', function (Blueprint $table) {
             $table->id();
-            $table->interger('mesa');
+            $table->integer('mesa');
             $table->date('fecha');
             $table->decimal('total', 10, 2);
             $table->unsignedBigInteger('suc_id');
