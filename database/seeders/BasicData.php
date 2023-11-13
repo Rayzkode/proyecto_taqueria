@@ -23,7 +23,8 @@ class BasicData extends Seeder
                 'precio' => 6,
                 'fecha' => '2002-10-08',
             ]);
-            // Agregar más registros según sea necesario
+
+            // TODO: HACER LOS DEMAS SEEDERS 
         
     }
 }

@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->integer('mesa');
             $table->date('fecha');
-            $table->integer('mesa');
             $table->decimal('total', 10, 2);
             $table->unsignedBigInteger('suc_id');
             
