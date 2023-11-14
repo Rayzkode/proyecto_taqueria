@@ -18,7 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::middleware('jwt.verify')->group(function(){
-    Route::get('/users/index', [UserController::class, 'index']);
+Route::middleware(['jwt.verify'])->group(function(){
+    Route::get('/users/index', [UserController::class, 'index'])->name('admin.index');
 });
